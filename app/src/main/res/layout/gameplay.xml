@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearMenu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblStep"
+                android:textSize="24sp"
+                android:text="@string/step_0"
+                android:fontFamily="@font/cookies"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblTime"
+                android:textSize="24sp"
+                android:text="00:00"
+                android:fontFamily="@font/cookies"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblLevel"
+                android:textSize="24sp"
+                android:fontFamily="@font/cookies"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="Level 1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:id="@+id/tblCards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TableRow android:gravity="center">
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@mipmap/ic_launcher_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:layout_marginEnd="8dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

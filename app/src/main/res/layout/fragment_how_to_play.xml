@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnReturnHome"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lblHowToPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cookies"
+                android:text="@string/how_to_play"
+                android:textAlignment="center"
+                android:textColor="#DD45"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/lblPhanHocTuVung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="@string/learn_words"
+                android:textColor="#DD45"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblHuongDanHocTuVung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cookies"
+                android:text="- Chọn chủ đề cần học trong phần chủ đề. " />
+
+            <ImageView
+                android:id="@+id/imgSubjectHT"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hinhchude" />
+
+
+            <TextView
+                android:id="@+id/lblHuongDanHocTuVung3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cookies"
+                android:text="- Chọn chủ đề cần học trong phần chủ đề sẽ vào bài học. Đây là một danh sách từ vựng để bạn có thể học. " />
+
+            <ImageView
+                android:id="@+id/imgHinhTuVung"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/thetuvung" />
+
+            <TextView
+                android:id="@+id/lblHuongDanHocTuVung2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cookies"
+                android:text="- Để chuyển sang từ kế tiếp hãy vuốt sang trái, ngược lại vuốt sang phải thì mở từ trước đó. Sau khi hoàn tất sẽ hiển thị lựa chọn vào phần mini game lật hình." />
+
+            <TextView
+                android:id="@+id/lblPhanGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="@string/title_minigame_howtoplay"
+                android:textColor="#DD45"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblHuongDanMiniGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="- Sẽ có 16 tấm hình up xuống trong mỗi màn chơi tương ứng với 8 từ vựng bạn đã học trong từng chủ đề. " />
+
+            <ImageView
+                android:id="@+id/imgGameMini"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hinhminigame" />
+
+            <TextView
+                android:id="@+id/lblHuongDanMiniGame2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="- 16 hình chia ra làm 8 cặp, mỗi cặp gồm 1 hình ảnh chứa từ vựng, hình mô tả. " />
+
+            <ImageView
+                android:id="@+id/imgHinhTuVung1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hinhtuvung" />
+
+            <TextView
+                android:id="@+id/lblHuongDanMiniGame3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="- Hình còn lại chứa file âm thanh của hình đó. " />
+
+            <ImageView
+                android:id="@+id/imgHinhTuVung2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/speaker" />
+
+            <TextView
+                android:id="@+id/lblHuongDanMiniGame4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/cookies"
+                android:text="- Luật chơi: Khi chọn đúng một cặp từ vựng trên thì cặp hình đó sẽ ẩn đi." />
+
+            <TextView
+                android:id="@+id/lblHuongDanMiniGame5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="64dp"
+                android:fontFamily="@font/cookies"
+                android:text="- Các thông số chính: Step: Số bước đi (số lần lật hình) của bạn. Time: Thời gian hoàn thành minigame, Level: chủ đề của bạn." />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:text="@string/return_menu"/>
+</RelativeLayout>

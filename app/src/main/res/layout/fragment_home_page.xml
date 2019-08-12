@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frm_home_page"
+   >
+
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        />
+    <Button
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/btnStart"
+        android:text="Bắt đầu"
+        android:textColor="#FFF"
+        android:fontFamily="@font/cookies"
+        android:layout_marginStart="32dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:textColor="#FFF"
+        android:id="@+id/btnScore"
+        android:text="Điểm số"
+        android:fontFamily="@font/cookies"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:textColor="#FFF"
+        android:id="@+id/btnAbout"
+        android:text="Hướng đẫn"
+        android:fontFamily="@font/cookies"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <Button
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:textColor="#FFF"
+        android:id="@+id/btnExit"
+        android:text="Thoát"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cookies"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+</LinearLayout>

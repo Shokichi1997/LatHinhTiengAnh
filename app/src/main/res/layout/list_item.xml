@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgIconSubject"
+        android:src="@drawable/office"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        android:layout_gravity="center"
+        app:civ_shadow_color="#8BC34A"
+        />
+
+    <TextView
+        android:id="@+id/lblNameSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="OFFICES"
+        android:textColor="#009900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        />
+</LinearLayout>

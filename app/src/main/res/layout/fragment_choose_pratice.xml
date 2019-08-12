@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:id="@+id/fragment_choose_practice">
+
+    <TextView
+        android:id="@+id/lblThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cookies"
+        android:text="@string/goto_practice"
+        android:textColor="#5d4FFF"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnGoToGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/board"
+            android:layout_marginTop="-127dp"
+            android:layout_below="@id/imgUpGoToGame"
+            />
+
+        <ImageView
+            android:id="@+id/imgUpGoToGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/animal" />
+
+    </RelativeLayout>
+
+</LinearLayout>
